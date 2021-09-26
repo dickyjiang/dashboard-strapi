@@ -3,7 +3,7 @@
     <Home/>
     <div class="bg-gray-100 p-8">
       <div class="grid md:grid-cols-2 gap-4 ">
-        <div class="border rounded px-3 py-2 shadow-md" v-for="(siswa, id) in siswas" :key="id">
+        <div v-for="(siswa, id) in siswas" :key="id" class="border rounded px-3 py-2 shadow-md" >
           <div class="flex justify-between">
             <h1 class="text-lg font-semibold">{{siswa.namaSiswa}}</h1>
             <p>NIM :  {{siswa.nim}}</p>
