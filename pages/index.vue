@@ -3,7 +3,7 @@
     <Home/>
     <div class="p-6" >
       <input class="p-3 rounded border border-gray-500 w-60 my-4 mx-auto " type="text" placeholder="search ">
-      <button class="rounded border p-3 bg-gray-400 text-gray-100">Clear Search</button>
+      <button class="btn-blue">Clear Search</button>
     </div>
     <div class="bg-gray-100 p-8">
       <div class="grid md:grid-cols-2 gap-4 ">
@@ -65,3 +65,9 @@ export default {
 
   }
 </script>
+
+<style scoped>
+  .btn-blue {
+    @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+  }
+</style>

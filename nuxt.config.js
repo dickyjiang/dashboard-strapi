@@ -37,10 +37,16 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    
-  ],
+    '@nuxtjs/strapi',
 
+  ],
+  strapi: {
+    entities: [''],
+  }
+
+,
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    buildModules: ['@nuxtjs/tailwindcss']
   }
 }
