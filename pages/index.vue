@@ -1,6 +1,10 @@
 <template>
   <div class="h-screen bg-gray-50">
     <Home/>
+    <div class="p-6" >
+      <input class="p-3 rounded border border-gray-500 w-60 my-4 mx-auto " type="text" placeholder="search ">
+      <button class="rounded border p-3 bg-gray-400 text-gray-100">Clear Search</button>
+    </div>
     <div class="bg-gray-100 p-8">
       <div class="grid md:grid-cols-2 gap-4 ">
         <div v-for="(siswa, id) in siswas" :key="id" class="border rounded px-3 py-2 shadow-md" >
@@ -27,6 +31,7 @@ export default {
   data() {
     return {
       siswas: [],
+      searchedSiswa: [],
       error: null
     }
   },
